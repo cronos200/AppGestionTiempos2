@@ -6,6 +6,12 @@ import {
   filtrarPorTipoProyecto,
 } from "../controllers/ControllerProyectos.js";
 
+let btnRegistrar = document.getElementById("btnRegistrar")
+if (btnRegistrar) {
+  btnRegistrar.addEventListener("click", registrarTiempos);
+}
+
+
 document
-  .getElementById("btnRegistrar")
-  .addEventListener("click", registrarTiempos);
+.getElementById("btnListarProyectos")
+.addEventListener("click", listarProyectos);
