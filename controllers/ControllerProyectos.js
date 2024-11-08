@@ -13,6 +13,11 @@ export function listarProyectos(){
         let dificultadProyecto = document.createElement('p')
         //AQUI MOSTRAMOS LAS ETIQUETAS
         nombreProyecto.textContent = proyectos[index].nombre
+        imgProyecto.src = proyecto[index]
+        duracionProyecto.textContent = proyecto[index]
+        tipoProyecto.textContent = proyecto[index]
+        empresProyecto.textContent = proyecto[index]
+        dificultadProyecto.textContent = proyecto[index]
         // AQUI ES PARA MOSTRAR EL ORDEN DEL PROYECTO DENTRO DEL DIV
         proyecto.append(imgProyecto, nombreProyecto, duracionProyecto, tipoProyecto, empresProyecto, dificultadProyecto)
         // SIRVE PARA QUE EN EL HTML SE PUEDA CONSTRUIR LA INFORMACION y append 
